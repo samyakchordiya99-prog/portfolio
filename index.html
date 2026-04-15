@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samyak Portfolio</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+    overflow-x: hidden;
+}
+
+/* GLOBAL LIGHT EFFECT */
+body::before {
+    content: "";
+    position: fixed;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, #38bdf8, transparent);
+    top: -300px;
+    left: -300px;
+    opacity: 0.25;
+    filter: blur(120px);
+}
+
+/* SIDE GLOW */
+.side-glow-left, .side-glow-right {
+    position: absolute;
+    top: 40%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, #38bdf8, transparent);
+    opacity: 0.5;
+    filter: blur(80px);
+}
+
+.side-glow-left { left: -80px; }
+.side-glow-right { right: -80px; }
+
+/* SOFT SPARKLE TEXT */
+h1, h2, p, li, a {
+    text-shadow: 0 0 8px rgba(56,189,248,0.25);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 25px #38bdf8, 0 0 50px #0ea5e9;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* NAME (UPDATED FONT) */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+
+    background: linear-gradient(90deg, #38bdf8, #22d3ee, #0ea5e9);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 0 20px rgba(56,189,248,0.6);
+}
+
+/* TAGLINE */
+.tagline {
+    color: #94a3b8;
+}
+
+/* RESUME BUTTON */
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* SECTION */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(2,6,23,0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(56,189,248,0.2);
+}
+
+/* HEADINGS */
+h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skills span {
+    background: #0ea5e9;
+    padding: 8px 14px;
+    margin: 6px;
+    border-radius: 20px;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+}
+
+/* PROJECT CARD */
+.project {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #1e293b;
+}
+
+.project a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* SOCIAL */
+.social a {
+    margin-right: 12px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* FORM */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #020617;
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="side-glow-left"></div>
+    <div class="side-glow-right"></div>
+
+    <img src="C:\Users\chord\OneDrive\Desktop\samyak portfolio\samyak.jpg.jpeg" class="profile-img">
+
+    <h1>Samyak Chordiya</h1>
+    <p class="tagline">Aspiring Developer | Building Smart Solutions</p>
+
+    <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>I am a first year Engineering student passionate about web dvelopment and problem-solving. I enjoy doing coding and continuously improving my technical skills. I like devloping website and apps on real world problems.</p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Python</span>
+        <span>C</span>
+        <span>JavaScript</span>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <p>SSC: 94%</p>
+    <p>HSC: 78%</p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="project">
+        <b>ResumeIQ</b>
+        <p>compass campus for finding location of classrooms .</p>
+        <a href="#">View Project</a>
+    </div>
+</section>
+
+<section>
+    <h2>Achievements</h2>
+    <ul>
+        <li>Participated in Datathon</li>
+        <li>Completed Python Course</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Coding Profiles</h2>
+    <div class="social">
+        <a href="#">CodeChef</a>
+        <a href="#">LeetCode</a>
+        <a href="#">HackerRank</a>
+    </div>
+</section>
+
+<section>
+    <h2>What I'm Learning</h2>
+    <p>Currently learning Phython and exploring Web Development.</p>
+</section>
+
+<section>
+    <h2>Hobbies</h2>
+    <p>🏏 Cricket | 🏍 Bike Riding | 💻 Tech Exploring</p>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: samyakchordiya99@gmail.com</p>
+    <p>Phone: 7218092114</p>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send Message 🚀</button>
+    </form>
+</section>
+
+</body>
+</html>sssss
